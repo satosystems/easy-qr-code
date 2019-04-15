@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Easy QR Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy QR Code",
   "icons": {
     "16": "icon16x16.png",

@@ -8,7 +8,9 @@
   chrome.tabs.getSelected(null, function(tab) {
     image.src = makeUrl(tab.url);
     textarea.value = tab.url;
-    textarea.select();
+    setTimeout(function() { // TODO: using setTimeout is workaround
+      textarea.select();
+    }, 100);
     button.onclick = function() {
       var text = textarea.value;
       if (text !== "") {
