@@ -1,7 +1,21 @@
 #textarea {
+  margin: 10px;
   width: 400px;
+  height: 80px;
+  font-size: 150%;
 }
 
 #button {
-  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 150%;
+  width: 400px;
+  height: 40px;
+}
+
+#image {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
