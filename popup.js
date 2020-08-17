@@ -8,7 +8,7 @@ window.onload = () => {
     textarea.value = text
     textarea.select()
   }
-  chrome.tabs.query({active: true}, tabs => { // eslint-disable-line
+  chrome.tabs.query({active: true, currentWindow: true}, tabs => { // eslint-disable-line
     update(tabs[0].url)
   })
   button.onclick = () => {
