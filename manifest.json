@@ -5,6 +5,7 @@
   "description": "Easy QR Code",
   "icons": {
     "16": "icon16x16.png",
+    "24": "icon24x24.png",
     "48": "icon48x48.png",
     "64": "icon64x64.png",
     "128": "icon128x128.png"
