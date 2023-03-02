@@ -9,16 +9,17 @@
     "url": "https://github.com/satosystems/easy-qr-code"
   },
   "scripts": {
+    "update": "cat package.json | jq -r '.devDependencies | keys | .[]' | xargs npm i -D",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore .",
     "format": "standard --fix popup.js",
     "zip": "zip easy-qr-code.zip manifest.json *.png *.css *.html *.js"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "standard": "^16.0.3"
+    "eslint-plugin-promise": "^4.3.1",
+    "standard": "^16.0.4"
   }
 }
