@@ -9,6 +9,7 @@
     "url": "https://github.com/satosystems/easy-qr-code"
   },
   "scripts": {
+    "update": "cat package.json | jq -r '.devDependencies | keys | .[]' | xargs npm i -D",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore .",
     "format": "standard --fix popup.js",
     "zip": "zip easy-qr-code.zip manifest.json *.png *.css *.html *.js"
