@@ -10,16 +10,17 @@
   },
   "scripts": {
     "update": "cat package.json | jq -r '.devDependencies | keys | .[]' | xargs npm i -D",
-    "lint": "eslint --fix --ext .js --ignore-path .gitignore .",
-    "format": "standard --fix popup.js",
+    "lint": "eslint --fix-dry-run eslint.config.mjs popup.js",
+    "format": "prettier -w eslint.config.mjs popup.css popup.html popup.js",
     "zip": "zip easy-qr-code.zip manifest.json *.png *.css *.html *.js"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "standard": "^16.0.4"
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "prettier": "^3.3.3"
   }
 }
